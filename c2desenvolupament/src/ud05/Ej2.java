@@ -13,6 +13,8 @@ public class Ej2 {
 		
 		String nom = "marc";
 
+		
+		//Concatenacion con la variable
 		System.out.println("Bienvenido "+nom+" !");
 
 	}

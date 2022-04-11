@@ -10,6 +10,7 @@ public class Ej7 {
 		
 		int numero = 1;
 		
+		//recorrer del 1 al 100
 		
 		while(numero <= 100) {
 			

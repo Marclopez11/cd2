@@ -19,6 +19,8 @@ public class Ej11 {
 		sc.close();
 
 		diadelasemana = diadelasemana.toLowerCase();
+		
+		//depende del dia de la semana entrara en un case para mostrarnos sus valores
 
 		switch (diadelasemana) {
 		case "lunes":

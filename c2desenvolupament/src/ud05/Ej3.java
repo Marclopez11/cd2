@@ -18,6 +18,7 @@ public class Ej3 {
 		sc.close();
 
 
+		//Concatenacion con la variable
 		System.out.println("Bienvenido "+nom+" !");
 
 	}

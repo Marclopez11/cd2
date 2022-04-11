@@ -13,9 +13,13 @@ public class Ej4 {
 		int resta ;
 		int multi = 1;
 
-		
+		//suma
 		n+=77;
+		
+		//resta
 		resta=n-3 ;
+		
+		//multi
 		multi=resta*2 ;
 
 		System.out.println(n);

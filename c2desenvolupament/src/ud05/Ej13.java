@@ -31,6 +31,8 @@ public class Ej13 {
 			String operador =sc.next();
 
 			
+			//depende la opcion hace un operador
+			
 			double resultado = 0;
 
 			switch (operador.charAt(0)) {

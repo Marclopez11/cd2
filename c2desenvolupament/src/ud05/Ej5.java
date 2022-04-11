@@ -16,7 +16,7 @@ public class Ej5 {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Introducce un numero para saber si es divisible entre 2");
-
+		//saber si es par o no 
 		String valorterminal = sc.nextLine();
 		int numero = Integer.parseInt(valorterminal);
 

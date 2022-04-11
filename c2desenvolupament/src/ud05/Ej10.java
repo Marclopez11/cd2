@@ -18,22 +18,29 @@ public class Ej10 {
 
 		Scanner sc = new Scanner(System.in);
 
+		//numero de ventas 
 		System.out.println("Introducce el número de ventas");
 
 		String numeroventasporteclado = sc.nextLine();
 
 		numeroventas = Integer.parseInt(numeroventasporteclado);
 
+		
+		//depende del numero de ventas nos solicitara los productos
 		for (int i = 1; i <= numeroventas; i++) {
 
 			System.out.println("Valor de el producto numero " + i);
 			String valorprductoporteclado = sc.nextLine();
 			valorproducto = Integer.parseInt(valorprductoporteclado);
+			//suma de todos los productos
 			sumadeproductos += valorproducto;
+			
 
 			System.out.println();
 		}
 
+		
+		
 		System.out.println("La suma de los productos es " + sumadeproductos);
 
 		sc.close();

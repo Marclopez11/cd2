@@ -16,6 +16,7 @@ public class Ej6 {
 		
 		double valorproductoconiva;
 		
+		//pedir producto sin iva
 		Scanner sc= new Scanner(System.in);
 		
 		System.out.println("Introducce un precio para saber su incremento + iva");
@@ -27,7 +28,7 @@ public class Ej6 {
 		 
 		
 		
-		
+		//Incremento de iva
 		
 		System.out.println("El precio valor con iva es "+(valorproducto+(valorproducto*iva)));
 

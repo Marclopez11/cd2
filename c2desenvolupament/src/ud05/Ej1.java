@@ -22,6 +22,8 @@ public class Ej1 {
 		String numero2 = sc.nextLine();
 
 		sc.close();
+		
+		//Comparamos si es mas grande igual o mas pequeñp
 
 		if (Integer.parseInt(numero1) > Integer.parseInt(numero2)) {
 

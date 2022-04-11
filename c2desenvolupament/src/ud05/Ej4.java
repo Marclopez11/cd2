@@ -14,7 +14,7 @@ public class Ej4 {
 		
 		Scanner sc= new Scanner(System.in);
 		
-		System.out.println("Calcular área del cuadrado");
+		System.out.println("Calcular área del circulo");
 
 		
 		System.out.println("Introducce el radio");
@@ -27,7 +27,7 @@ public class Ej4 {
 		valorradio = Double.parseDouble(radio);
 		
 
-				
+		//Calcular el area del circulo
 		System.out.println("Bienvenido "+Math.PI*Math.pow(valorradio , 2)+" !");
 
 	}

@@ -23,9 +23,11 @@ public class Ej12 {
 
 		do {
 			
+			//pedimos por lomenos una vez la contraseña
 			System.out.println("Introduze tu contraseña");
 			contraseñausuario = sc.nextLine();
 
+			//si no es igual sera contraseña incorrecta
 			if (contraseñausuario.equals(contraseña)) {
 				correcta = true;
 				System.out.println("Correcto!");
@@ -33,6 +35,7 @@ public class Ej12 {
 				System.out.println("Contraseña incorrecta");
 			}
 			
+			//tenemos 3 intentos
 			intentos++;
 			
 			}while (intentos < 3 && correcta == false);
