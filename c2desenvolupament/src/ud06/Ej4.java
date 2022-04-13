@@ -1,5 +1,9 @@
 package ud06;
-
+/*
+ * Marc Lopez
+ * Java 1.8
+ * 
+ * */
 import java.util.Iterator;
 import java.util.Scanner;
 
