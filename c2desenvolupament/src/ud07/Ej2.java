@@ -59,6 +59,7 @@ public class Ej2 {
 
 	}
 
+	//rellenamos el hastable de productos y precios
 	public static void productos() {
 
 		productos.put(1, "Manzana");
@@ -74,6 +75,7 @@ public class Ej2 {
 	}
 
 	
+	//metodo comprar , cantidad de productos llenaremos el carrito
 
 	public static void comprar() {
 
@@ -97,6 +99,8 @@ public class Ej2 {
 	}
 	
 	
+	//mostraremos por pantalla los productos con el iva incrementado
+	//podemos selecionar que iva aplicar
 	public static void mostrarIva() {
 
 		cantidadcarrito = carrito.elements();
@@ -118,6 +122,7 @@ public class Ej2 {
 
 	}
 
+	//mostraremos todos los productos del carrito
 	public static void mostrarCarrito() {
 
 		while (cantidadcarrito.hasMoreElements()) {
@@ -134,6 +139,8 @@ public class Ej2 {
 	}
 	
 	
+	
+	//pagaremos los productos hasta que este este todo correcto
 	public static void pagarProductos() {
 
 		System.out.println("Total del carrito "+preciopagar);

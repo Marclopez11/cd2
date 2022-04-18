@@ -2,13 +2,19 @@ package ud07;
 
 import java.util.Hashtable;
 import java.util.Scanner;
-
+/*
+ * Marc Lopez
+ * Java 1.8
+ * 
+ * */
 public class Ej3 {
 
 	static Scanner sc = new Scanner(System.in);
 
+	//guardaremos el stock de los productos
 	static Hashtable<String, Integer> cantidadstock = new Hashtable<String, Integer>();
 
+	//guardaremos los libros
 	static Hashtable<String, Integer> libros = new Hashtable<String, Integer>();
 
 	public static void main(String[] args) {
@@ -47,6 +53,7 @@ public class Ej3 {
 
 	}
 
+	//pediremos cuantos libros queremos crear, y asignaremos un nombre y un precio
 	public static void crearArticulo() {
 
 		System.out.println(" Cuantos libros  quieres añadir  ");
@@ -73,6 +80,7 @@ public class Ej3 {
 
 	}
 
+	//mostrar todos los articulos y el stock de cada uno 
 	public static void mostrarArticulo() {
 
 		System.out.println("Libro");
@@ -84,6 +92,7 @@ public class Ej3 {
 
 	}
 
+	//buscaremos si existe el artiuculo , el precio que tiene y el stock
 	public static void buscarArticulo() {
 
 		System.out.println("Buscar Libro");
