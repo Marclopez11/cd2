@@ -7,6 +7,8 @@ public class Ej3 {
 
 	static Scanner sc = new Scanner(System.in);
 
+	static Hashtable<String, Integer> cantidadstock = new Hashtable<String, Integer>();
+
 	static Hashtable<String, Integer> libros = new Hashtable<String, Integer>();
 
 	public static void main(String[] args) {
@@ -20,26 +22,16 @@ public class Ej3 {
 			case 1:
 				crearArticulo();
 
-				System.out.println("1 - Para crear un articulo 2 - Mostrar Articulos -  3- Buscar Articulo 0 - Para salir");
-				proces = sc.nextInt();
-
 				break;
 			case 2:
 
-				System.out.println(libros.toString());
-				System.out.println("1 - Para crear un articulo 2 - Mostrar Articulos -  3- Buscar Articulo 0 - Para salir");
-				proces = sc.nextInt();
+				mostrarArticulo();
 
 				break;
 
 			case 3:
 
-				System.out.println("Buscar Libro");
-				String alum = sc.next();
-				System.out.println(libros.get(alum));
-
-				System.out.println("1 - Para crear un articulo 2 - Mostrar Articulos -  3- Buscar Articulo 0 - Para salir");
-				proces = sc.nextInt();
+				buscarArticulo();
 
 				break;
 
@@ -48,7 +40,8 @@ public class Ej3 {
 
 				break;
 			}
-
+			System.out.println("1 - Para crear un articulo 2 - Mostrar Articulos -  3- Buscar Articulo 0 - Para salir");
+			proces = sc.nextInt();
 		}
 		sc.close();
 
@@ -70,10 +63,39 @@ public class Ej3 {
 			System.out.println("Precio");
 			int precio = sc.nextInt();
 
-			
+			System.out.println("Stock");
+			int stock = sc.nextInt();
+
 			libros.put(artiuclo, precio);
+			cantidadstock.put(artiuclo, stock);
 
 		}
+
+	}
+
+	public static void mostrarArticulo() {
+
+		System.out.println("Libro");
+		System.out.println("");
+		System.out.println(libros.toString());
+		System.out.println("");
+		System.out.println("STOCK");
+		System.out.println(cantidadstock.toString());
+
+	}
+
+	public static void buscarArticulo() {
+
+		System.out.println("Buscar Libro");
+		String alum = sc.next();
+
+		System.out.println("Precio del libro");
+		System.out.println(libros.get(alum));
+		System.out.println("");
+
+		System.out.println("STOCK");
+		System.out.println(cantidadstock.get(alum));
+		System.out.println("");
 
 	}
 
